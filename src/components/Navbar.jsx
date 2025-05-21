@@ -29,10 +29,10 @@ function Navbar() {
 
       {/* Get in Touch Button */}
       <a
-        href="/contact"
+        href="/addProduct"
         className="hidden lg:inline-flex items-center justify-center bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded-md text-sm font-medium"
       >
-        Get in Touch
+        Add Product
       </a>
     </nav>
   );
