@@ -1,5 +1,7 @@
+import { Link } from "react-router-dom"
 
 const Card = ({data}) => {
+
   return (
     <>
     <div class="relative flex flex-col w-96 overflow-hidden rounded-2xl border border-slate-200 bg-white shadow transition-transform duration-300 hover:scale-105 hover:shadow-xl my-6">
@@ -23,12 +25,12 @@ const Card = ({data}) => {
   </div>
 
   <div class="px-5 pb-5">
-    <button
+    <Link to={`/blogDetail/${data?._id}`}><button
       type="button"
       class="w-full rounded-md bg-slate-800 py-2 px-4 text-sm font-medium text-white transition-all duration-300 hover:bg-slate-700 hover:shadow-lg focus:outline-none focus:ring-2 focus:ring-slate-500 focus:ring-offset-2"
     >
       Read more
-    </button>
+    </button></Link>
   </div>
 </div>
 
